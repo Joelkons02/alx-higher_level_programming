@@ -2,7 +2,6 @@
 
 /**
  * check_cycle - checks if a singly linked list
- * 
  * @list: pointer to the list
  * Return: 0 if there is no cycle,
  * 1 if there is a cycle

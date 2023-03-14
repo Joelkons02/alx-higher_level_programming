@@ -1,5 +1,6 @@
 #include "lists.h"
 
+
 listint_t *is_pal_recurs(listint_t *left, listint_t *right)
 {
 	if (right->next == NULL)
@@ -25,6 +26,12 @@ listint_t *is_pal_recurs(listint_t *left, listint_t *right)
 	return (NULL);
 }
 
+/**
+  * is_palindrome - Checks if a singly linked list is a palindrome
+  * @head: The head of the singly linked list
+  *
+  * Return: 0 if it is not a palindrome, 1 if it is a palindrome
+  */
 int is_palindrome(listint_t **head)
 {
 	if (head == NULL || *head == NULL || (*head)->next == NULL)

@@ -24,7 +24,6 @@ listint_t *is_pal_recurs(listint_t *left, listint_t *right)
 	}
 	return (NULL);
 }
-		
 
 int is_palindrome(listint_t **head)
 {

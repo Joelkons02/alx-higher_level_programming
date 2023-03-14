@@ -5,7 +5,6 @@
 /**
   * is_palindrome - Checks if a singly linked list is a palindrome
   * @head: The head of the singly linked list
-  *
   * Return: 0 if it is not a palindrome, 1 if it is a palindrome
   */
 int is_palindrome(listint_t **head)
@@ -24,7 +23,6 @@ int is_palindrome(listint_t **head)
     len_cyc = len * 2;
     len_list = len_cyc - 2;
     end = *head;
-
     for (; i < len_cyc; i = i + 2)
     {
         if (start[i].n != end[len_list].n)
@@ -38,7 +36,6 @@ int is_palindrome(listint_t **head)
   * get_nodeint_at_index - Gets a node from a linked list
   * @head: The head of the linked list
   * @index: The index to find in the linked list
-  *
   * Return: The specific node of the linked list
   */
 listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
@@ -52,7 +49,6 @@ listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 		{
 			if (iter_times == index)
 				return (current);
-
 			current = current->next;
 			++iter_times;
 		}
@@ -63,7 +59,6 @@ listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 /**
   * slistint_len - Counts the number of elements in a linked list
   * @h: The linked list to count
-  *
   * Return: Number of elements in the linked list
   */
 size_t listint_len(const listint_t *h)
